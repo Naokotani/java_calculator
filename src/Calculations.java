@@ -8,7 +8,7 @@ public class Calculations {
     // Controls whether the input field is reset when typing starts
     private boolean resetInput = false;
     // Usd to determine the appropriate calculation to run.
-    private enum Operator {ADD, SUBTRACT, MULTIPLY, DIVIDE, EQUALS, NONE};
+    private enum Operator {ADD, SUBTRACT, MULTIPLY, DIVIDE, EQUALS, NONE}
     // Holds the Operator enum to control calculations.
     private Operator lastOperator = Operator.NONE;
 

@@ -49,108 +49,23 @@ public class CalcInput extends JFrame {
 
         /*The following event listeners have self-explanatory names.
         and handle the various buttons associated with the names. */
-        number1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("1"));
-            }
-        });
-        number2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("2"));
-            }
-        });
-        number3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("3"));
-            }
-        });
-        number4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("4"));
-            }
-        });
-        number5.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("5"));
-            }
-        });
-        number6.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("6"));
-            }
-        });
-        number7.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("7"));
-            }
-        });
-        number8.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("8"));
-            }
-        });
-        number9.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("9"));
-            }
-        });
-        number0.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("0"));
-            }
-        });
-        decimal.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.setInput("."));
-            }
-        });
-        clear.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.clearTotal());
-            }
-        });
-        add.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.addInput());
-            }
-        });
-        subtract.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.subInput());
-            }
-        });
-        multiply.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.mulInput());
-            }
-        });
-        divide.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.divInput());
-            }
-        });
-        equal.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                numberInput.setText(calculations.equals());
-            }
-        });
+        number1.addActionListener(e -> numberInput.setText(calculations.setInput("1")));
+        number2.addActionListener(e -> numberInput.setText(calculations.setInput("2")));
+        number3.addActionListener(e -> numberInput.setText(calculations.setInput("3")));
+        number4.addActionListener(e -> numberInput.setText(calculations.setInput("4")));
+        number5.addActionListener(e -> numberInput.setText(calculations.setInput("5")));
+        number6.addActionListener(e -> numberInput.setText(calculations.setInput("6")));
+        number7.addActionListener(e -> numberInput.setText(calculations.setInput("7")));
+        number8.addActionListener(e -> numberInput.setText(calculations.setInput("8")));
+        number9.addActionListener(e -> numberInput.setText(calculations.setInput("9")));
+        number0.addActionListener(e -> numberInput.setText(calculations.setInput("0")));
+        decimal.addActionListener(e -> numberInput.setText(calculations.setInput(".")));
+        clear.addActionListener(e -> numberInput.setText(calculations.clearTotal()));
+        add.addActionListener(e -> numberInput.setText(calculations.addInput()));
+        subtract.addActionListener(e -> numberInput.setText(calculations.subInput()));
+        multiply.addActionListener(e -> numberInput.setText(calculations.mulInput()));
+        divide.addActionListener(e -> numberInput.setText(calculations.divInput()));
+        equal.addActionListener(e -> numberInput.setText(calculations.equals()));
 
     }
 }
