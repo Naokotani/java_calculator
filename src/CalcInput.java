@@ -32,7 +32,7 @@ public class CalcInput extends JFrame {
      */
     public CalcInput(){
         this.calculations = new Calculations();
-        // Makes the main frame responsible for holding content.
+        // Makes the main frame that is responsible for holding content.
         setContentPane(mainFrame);
         // Sets the original size of the UI
         setSize(300, 250);
